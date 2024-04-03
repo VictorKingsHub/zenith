@@ -1,3 +1,5 @@
+import { FaLinkedin } from "react-icons/fa6";
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -18,7 +20,7 @@ const Header = () => {
         <ul className="hidden  flex-row justify-between text-black space-center md:flex">
           {NAV_LINKS.map((menuitem) => {
             return (
-              <Link href={menuitem.href} key={menuitem.key} className="mx-4 font-bold cursor-pointer hover:text-red-500 transition-all"> {menuitem.label} </Link>
+              <Link href={menuitem.href} key={menuitem.id} className="mx-4 font-bold cursor-pointer hover:text-red-500 transition-all"> {menuitem.label} </Link>
             )
           })}
         </ul>
@@ -37,7 +39,7 @@ const Header = () => {
         <ul className="flex flex-col md:hidden bg-green-500">
           {NAV_LINKS.map((menuitem) => {
             return (
-              <Link href={menuitem.href} key={menuitem.key} className="mx-4 cursor-pointer hover:text-red-500 transition-all"> {menuitem.label} </Link>
+              <Link href={menuitem.href} key={menuitem.id} className="mx-4 cursor-pointer hover:text-red-500 transition-all"> {menuitem.label} </Link>
             )
           })}
         </ul>

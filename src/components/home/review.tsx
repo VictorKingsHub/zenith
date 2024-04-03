@@ -1,40 +1,27 @@
+import { REVIEW } from '@/app/constants'
 import Image from 'next/image'
 import React from 'react'
+import "./review.css"
 
 const Review = () => {
   return (
-    <div className='flex flex-row '>
-      <h1 className='center'>CLIENT'S REVIEW</h1>
-      <div className='client_comment'>
-        <div className="client">
-          <Image src="/mma.png" alt='mma' width={100} height={100} className="rounded-full"/>
-          <h5 className='pt-2 font-bold'>Client's name</h5>
-          <p className='pt-1 leading-5'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam id tempore voluptate incidunt animi, et dicta sequi? Alias, consequuntur fugit. Eius, minus neque repellat corrupti ut quam? Neque, eos!</p>
-        </div>
+    <div className='review-wrapper '>
+      <div className=''>
+        <h1 className='content-center text-center text-xl font-bold'>CLIENT'S REVIEW</h1>
       </div>
-      <div className='client_comment'>
-        <div className="client">
-          <Image src="/mma.png" alt='mma' width={100} height={100} className="rounded-full" />
-          <h5 className='pt-2 font-bold'>Client's name</h5>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam id tempore voluptate incidunt animi, et dicta sequi? Alias, consequuntur fugit. Eius, minus neque repellat corrupti ut quam? Neque, eos!</p>
-        </div>
+      <div className="client_comment">
+        {REVIEW.map((item) => {
+          return (
+            <div className="client " key={item.id} >
+              <Image src={item.img} alt={item.name} width={80} height={80} className='rounded-full' />
+              <h5 className='pt-2 font-bold'> {item.name} </h5>
+              <h6> {item.professionn} </h6>
+              <p className="pt-1 leading-5">  {item.Comment}  </p>
+            </div>
+          )
+        })}
       </div>
-      <div className='client_comment'>
-        <div className="client">
-          <Image src="/mma.png" alt='mma' width={100} height={100} className="rounded-full" />
-          <h5 className='pt-2 font-bold'>Client's name</h5>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam id tempore voluptate incidunt animi, et dicta sequi? Alias, consequuntur fugit. Eius, minus neque repellat corrupti ut quam? Neque, eos!</p>
-        </div>
-      </div>
-      <div className='client_comment'>
-        <div className="client ">
-          <div >
-            <Image src="/mma.png" alt='mma' width={100} height={100} className="rounded-full" />
-          </div>
-          <h5 className='pt-2 font-bold'>Client's name</h5>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam id tempore voluptate incidunt animi, et dicta sequi? Alias, consequuntur fugit. Eius, minus neque repellat corrupti ut quam? Neque, eos!</p>
-        </div>
-      </div>
+
     </div>
   )
 }

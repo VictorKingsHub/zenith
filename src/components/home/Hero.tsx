@@ -12,7 +12,7 @@ const EmblaCarousel = ()=> {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide">
-          <Image src={"/health.jpg"} width={2000} height={1000} alt='health Carousel Image'/>
+          <Image src={"/health.jpg"}  width={2000} height={1000} alt='health Carousel Image'/>
         </div>
         <div className="embla__slide">
 

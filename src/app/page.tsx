@@ -1,21 +1,20 @@
 import EmblaCarousel from "@/components/home/Hero";
-import Hero from "@/components/home/Hero";
+import Join from "@/components/home/Join";
 import IconSection from "@/components/home/iconSection";
 import LocationMap from "@/components/home/locationMap";
 import MenuSection from "@/components/home/menuSection";
-import MenuTry from "@/components/home/menuTry";
 import Review from "@/components/home/review";
+import VideoSection from "@/components/home/videoSection";
 
 export default function Home() {
   return (
     <>
-    {/* <Hero /> */}
-    <EmblaCarousel />
-    <IconSection />
-    {/* <MenuTry /> */}
-    <MenuSection />
-    <Review />
-    <LocationMap />
+      <EmblaCarousel />
+      <IconSection />
+      <Join />
+      <MenuSection />
+      <VideoSection />
+      <Review />
     </>
   );
 }

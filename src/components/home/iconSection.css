@@ -1,0 +1,22 @@
+.iconSection{
+    @media(max-width: 640px) {
+      display: none;
+    }
+
+}
+
+
+
+.icon{
+      @media(max-width: 764px) {
+        width: 25px;
+        height: 25px;
+      }
+  }
+
+  .iconText{
+    text-align: center;
+    @media(max-width: 764px) {
+        font-size: medium;
+      }
+  }

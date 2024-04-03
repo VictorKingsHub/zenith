@@ -1,0 +1,67 @@
+.satisfying {
+    font-size: 2.5rem;
+    
+    @media only screen and(max-width: 640px) {
+        font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+
+}
+
+.join_wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    height: 70vh;
+    background-image: url("/homepage-girl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 1rem;
+
+    @media(max-width: 640px) {
+        display: flex;
+        height: 65vh;
+    }
+}
+
+.join_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 60vw;
+    justify-items: left;
+    font-family: "Roboto" Arial, Helvetica, sans-serif;
+    margin-right: 25vw;
+    margin-left: 5vw;
+
+    @media(max-width: 640px) {
+        align-items: center;
+        min-width: 100%;
+        padding: 1rem 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+.button{
+    display: flex;
+    flex-direction: row;
+
+}
+button{
+    font-weight: 700;
+    padding: .8rem;
+
+    @media only screen and (max-width: 640px) {
+        font-size: .7rem;
+        font-weight: 400;
+        padding: .5rem;
+
+    }
+}
