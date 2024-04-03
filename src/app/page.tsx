@@ -1,4 +1,5 @@
 import EmblaCarousel from "@/components/home/Hero";
+import HomeMenu from "@/components/home/HomeMenu";
 import Join from "@/components/home/Join";
 import IconSection from "@/components/home/iconSection";
 import LocationMap from "@/components/home/locationMap";
@@ -12,7 +13,8 @@ export default function Home() {
       <EmblaCarousel />
       <IconSection />
       <Join />
-      <MenuSection />
+      <HomeMenu />
+      {/* <MenuSection /> */}
       <VideoSection />
       <Review />
     </>

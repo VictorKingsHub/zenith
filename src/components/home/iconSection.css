@@ -16,7 +16,25 @@
 
   .iconText{
     text-align: center;
+    color: rgb(68, 68, 68);
+
     @media(max-width: 764px) {
-        font-size: medium;
+        font-size: smaller;
       }
+  }
+
+
+  .education, .travel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .serviceIcon{
+    font-size: 4rem;
+    color: red;
+  
+    @media(max-width: 764px) {
+      font-size: 3rem;
+    }
   }
