@@ -13,9 +13,15 @@ const Review = () => {
         {REVIEW.map((item) => {
           return (
             <div className="client " key={item.id} >
-              <Image src={item.img} alt={item.name} width={80} height={80} className='rounded-full' />
-              <div > <span className=' name mt-2 leading-1'> {item.name} </span>  </div>
-              <span>{item.professionn}</span>
+              <div className='flex flex-row justify-center space-center'>
+                <div>
+                  <Image src={item.img} alt={item.name} width={80} height={80} className='rounded-full' />
+                </div>
+                <div className='flex flex-col ml-2 leading-0'>
+                  <span className=' name text-sm leading-0'> {item.name} </span>
+                  <span className='text-xm bg-gree-500'>{item.professionn}</span>
+                </div>
+              </div>
               <div className="pt-1 leading-5 comment">  {item.Comment}  </div>
             </div>
           )

@@ -1,20 +1,26 @@
+"use client"
+
 import { FOOTER_CONTENT } from "@/app/constants"
 import "./footer.css"
 import Link from "next/link"
 import Marquee from "react-fast-marquee";
+import ReactPlayer from 'react-player'
 
 import { FaLinkedin } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaFacebook } from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
+import { inherits } from "util";
 
 export default function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="one">
         <div className="video">
-          <h1 className="font-semibold text-sm pb-2">VIDEO ADVERT</h1>
+          <div>
+          <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' controls={true} playing={false} light={true} volume={0} muted={true} width="280px" height="250px"  />
+          </div>
 
         </div>
         <div className="office">

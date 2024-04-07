@@ -11,7 +11,7 @@ const EmblaCarousel = ()=> {
   return (
     <div style={{zIndex: -10}} className="embla"  ref={emblaRef}>
       <div className="embla__container" style={{zIndex: -10}}>
-        <div className="embla__slide" style={{zIndex: -10}}>
+        <div className="embla__slide" >
           <Image src={"/health.jpg"}  width={2000} height={1000} alt='health Carousel Image'/>
         </div>
         <div className="embla__slide">

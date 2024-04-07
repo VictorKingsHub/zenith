@@ -42,13 +42,13 @@
 }
 
 .client:hover {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     transition: background-color ease-in-out 1s ease-in-out 2s infinite;
-    border: none;
-    border: 1px solid rgba(211, 143, 143, 0.5);
+    /* border: none; */
+    /* border: 1px solid rgba(211, 143, 143, 0.5);
     box-shadow: -1px 0px 31px -11px rgba(211, 143, 143, 0.5);
     -webkit-box-shadow: -1px 0px 31px -11px rgba(211, 143, 143, 0.5);
-    -moz-box-shadow: -1px 0px 31px -11px rgba(211, 143, 143, 0.5);
+    -moz-box-shadow: -1px 0px 31px -11px rgba(211, 143, 143, 0.5); */
 }
 
 .comment{

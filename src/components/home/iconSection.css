@@ -31,8 +31,8 @@
     align-items: center;
   }
   .serviceIcon{
-    font-size: 4rem;
-    color: red;
+    font-size: 3.5rem;
+    color: #c72738;
   
     @media(max-width: 764px) {
       font-size: 3rem;
