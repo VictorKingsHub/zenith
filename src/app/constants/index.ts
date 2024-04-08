@@ -46,8 +46,8 @@ export const ABOUTUS = [
 export const FOOTER_CONTENT = {
     address: [
         { title: "HEAD OFFICE", id: 1},
-        { office: "Office F3, Stice Plaza, km 17 Airport Road, Beside Chicken Republic, Rukpokwu, Port Harcourt", id: 2 },
-        { office: "152 Awolowo way by Allen Bus stop, Ikeja, Lagos State, Nigeria", id:3},
+        { location: "Port Harcourt", office: "Office F3, Stice Plaza, km 17 Airport Road, Beside Chicken Republic, Rukpokwu, Port Harcourt", id: 2 },
+        {location: "Lagos", office: "152 Awolowo way by Allen Bus stop, Ikeja, Lagos State, Nigeria", id:3},
         
     ],
     footerNav: [

@@ -1,38 +1,47 @@
-.satisfying {
-    color: rgb(68, 68, 68);
-    font-size: 2.5rem;
-    
-    @media only screen and(max-width: 640px) {
-        font-size: 1rem;
-    }
-
-    @media only screen and (max-width: 768px) {
-        font-size: 1.8rem;
-    }
-
-}
-
-.description{
-    color: rgb(68, 68, 68);
-
-}
-
 .join_wrapper {
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    height: 70vh;
+    height: fit-content;
     background-image: url("/homepage-girl.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    padding: 1rem;
+    min-width: 100vw;
+    padding: .5rem .3rem;
 
     @media(max-width: 640px) {
         display: flex;
-        height: 65vh;
+        height: fit-content;
+        width: 100%;
+        padding: 1rem .2rem;
+    }
+    @media(min-width: 640px) {
+        height: fit-content;
+        padding: 5rem 5%;
+    }
+}
+
+.satisfying {
+    color: rgb(68, 68, 68);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+    @media(max-width: 640px) {
+        font-size: 1.4rem;
+    }
+
+
+}
+
+.description {
+    color: rgb(68, 68, 68);
+    font-size: 1.4rem;
+
+    @media(max-width: 768px) {
+        font-size: 1.1rem;
     }
 }
 
@@ -40,7 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    max-width: 60vw;
+    max-width: 48vw;
     justify-items: left;
     font-family: "Roboto" Arial, Helvetica, sans-serif;
     margin-right: 25vw;
@@ -55,19 +64,20 @@
         justify-content: center;
     }
 }
-.button{
+
+.button {
     display: flex;
     flex-direction: row;
-
+    font-size: 1rem;
 }
-button{
+
+button {
     font-weight: 500;
-    padding: .8rem;
-
-    @media only screen and (max-width: 640px) {
-        font-size: .7rem;
-        font-weight: 400;
+    padding: .6rem;
+    font-size: .9rem;
+    
+    @media(max-width: 640px) {
+        font-size: .5rem;
         padding: .5rem;
-
     }
 }

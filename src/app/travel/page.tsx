@@ -1,9 +1,10 @@
 import React from 'react'
+import TravelHeroSection from './TravelHeroSection'
 
 const travel = () => {
   return (
     <div  className="h-screen bg-red-500 text-white text-center">
-      <h1>TRAVEL PAGE</h1>
+      <TravelHeroSection />
     </div>
   )
 }

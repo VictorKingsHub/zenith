@@ -1,40 +1,71 @@
-.iconSection{
-    @media(max-width: 640px) {
-      display: none;
-    }
+.iconSection-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  gap: 10;
+  margin: 3px auto;
+  padding: 3px;
+
+  @media(max-width: 764px) {
+    width: 100%;
+    padding: 1px;
+  }
+
+  @media(min-width: 764px) {
+    width: 60vw;
+  }
+}
+
+.icon {
+  @media(max-width: 764px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.iconText {
+  text-align: center;
+  color: rgb(68, 68, 68);
+
+  @media(max-width: 764px) {
+    font-size: .5rem;
+  }
+
+  @media(min-width: 764px) {
+    font-size: 0.75rem;
+  }
 
 }
 
+.serviceIcon {
+  width: 50px;
 
-
-.icon{
-      @media(max-width: 764px) {
-        width: 25px;
-        height: 25px;
-      }
+  @media(max-width: 764px) {
+    width: 22px;
   }
 
-  .iconText{
-    text-align: center;
-    color: rgb(68, 68, 68);
-
-    @media(max-width: 764px) {
-        font-size: smaller;
-      }
+  @media(min-width: 764px) {
+    font-size: 0.75rem;
   }
+}
 
 
-  .education, .travel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.education,
+.travel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceIcon {
+  font-size: 3.5rem;
+  color: #c72738;
+
+  @media(max-width: 764px) {
+    font-size: 3rem;
   }
-  .serviceIcon{
-    font-size: 3.5rem;
-    color: #c72738;
-  
-    @media(max-width: 764px) {
-      font-size: 3rem;
-    }
-  }
+}

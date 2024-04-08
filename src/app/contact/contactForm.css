@@ -1,0 +1,20 @@
+.form-wrapper {
+    width: 45vw;
+    padding: .5rem 1rem;
+
+
+    @media(max-width: 768px){
+        width: 100vw;
+    }
+
+}
+
+textarea,
+input {
+    padding: 4px 6px;
+    border: 2px solid slategray;
+    border-radius: 10px;
+}
+/* label{ */
+    /* box-shadow: -5px 5px 10px gray ; */
+/* } */

@@ -1,0 +1,28 @@
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-self: center;
+    min-width: 98vw;
+    max-width: 98vw;
+    border: 2px solid green;
+
+    @media (min-width: 768px) {
+        padding: 5% 10%;
+    }
+}
+
+.component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 2px;
+    width: 100%;
+
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
